@@ -6,7 +6,7 @@ A tool for prototyping UX/templates and SCSS changes. This should be replaced by
 ### Getting started
 
 * Run `npm install`
-* Run `run.sh`
+* Run `./run.sh`
 
 ### Contributing
 
