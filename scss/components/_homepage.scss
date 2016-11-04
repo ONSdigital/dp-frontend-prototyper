@@ -1,0 +1,129 @@
+/* Created a separate file as an easy reference point for all refactored homepage styling
+   Until testing is complete add all new homepage styling here
+   Once testing is complete move code into suitable files, or update accordingly. e.g. typography
+*/
+
+.homepage {
+
+    li {
+        margin-top: 0;
+    }
+
+    .heading-link {
+        margin: 0;
+        margin-top: -26px;
+        padding: 0;
+        float: right;
+    }
+
+    .page-intro {
+
+        &__title {
+            font-size: 33px;
+            margin: ($baseline * 4) 0 0 0;
+            line-height: $baseline * 5;
+            padding: 0;
+            font-weight: 700;
+        }
+
+        &__content {
+            font-size: 17px;
+            line-height: $baseline * 3;
+            margin: 0 0 ($baseline * 4) 0;
+            padding: 6px 0 2px 0;
+        }
+    }
+
+    .release {
+
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: $baseline * 3;
+            padding: 5px 0 3px 0;
+            margin: 0;
+            @include breakpoint(lg) {
+                min-height: $baseline * 10; // line-height * 3
+            }
+        }
+
+        &__content {
+            padding: 6px 0 2px 0;
+            margin: 0;
+        }
+    }
+
+    .headline-data {
+
+        p {
+            padding: 6px 0 2px 0;
+        }
+
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: $baseline * 3;
+            padding: 5px 0 3px 0;
+            margin: 0;
+            top: $baseline * 22;
+            @include breakpoint(lg) {
+                height: 96px;
+            }
+        }
+
+        &__content {
+
+        }
+
+        &__dates {
+            font-size: 12px;
+            line-height: 21px;
+            padding-bottom: 3px;
+            margin: 0;
+            text-transform: capitalize;
+
+        }
+
+        &__figure {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 0;
+
+        }
+
+        &__sparkline {
+            height: $baseline * 14;
+            overflow: hidden;
+
+            @include breakpoint(lg) {
+                height: $baseline * 20;
+            }
+
+            .sparkline-image {
+                @include breakpoint(md) {
+                    height: 100%;
+                }
+                @include breakpoint(lg) {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+    }
+
+    .other {
+
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: $baseline * 3;
+            padding: 5px 0 3px 0;
+            margin: 0;
+        }
+
+    }
+
+}
+

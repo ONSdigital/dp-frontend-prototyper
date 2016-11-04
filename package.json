@@ -1,0 +1,26 @@
+{
+  "name": "dp-frontend-prototyping-kit",
+  "version": "0.0.1",
+  "description": "Prototyping kit for ONS Pattern Library",
+  "main": "",
+  "scripts": {
+    "clean": "",
+    "build-css": "mkdir -pv dist/css && ./node_modules/node-sass/bin/node-sass --output-style compressed scss/main.scss dist/css/main.css",
+    "build": "npm run build-css",
+    "postinstall": "npm run build",
+    "watch-scss": "./node_modules/onchange/cli.js 'scss' -- npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ONSdigital/dp-frontend-prototyping-kit.git"
+  },
+  "license": "Open Government License v3.0",
+  "dependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "latest"
+  },
+  "devDependencies": {
+    "onchange": "latest",
+    "webpack": "^1.13.3"
+  }
+}
